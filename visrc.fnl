@@ -1,7 +1,7 @@
 (require :vis)
 
-(require :commentary)                          ; https://github.com/r1bilski/vis-commentary
-(require :surround)                            ; https://github.com/lutobler/vis-surround
+(require :plugins/vis-commentary)              ; https://github.com/r1bilski/vis-commentary
+(require :plugins/vis-surround)                ; https://github.com/lutobler/vis-surround
 (local cursors (require :plugins/vis-cursors)) ; https://github.com/erf/vis-cursors
 (local lspc (require :plugins/vis-lspc))       ; https://github.com/fischerling/vis-lspc
 
