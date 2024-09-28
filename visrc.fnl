@@ -3,6 +3,7 @@
 (require :commentary)                          ; https://github.com/r1bilski/vis-commentary
 (require :surround)                            ; https://github.com/lutobler/vis-surround
 (local cursors (require :plugins/vis-cursors)) ; https://github.com/erf/vis-cursors
+(local lspc (require :plugins/vis-lspc))       ; https://github.com/fischerling/vis-lspc
 
 (local fennel (require :fennel))
 (local config-path (.. (os.getenv :HOME) :/.config/vis))
@@ -11,7 +12,6 @@
 
 (set cursors.path (.. config-path :/cursors))
 
-(local lspc (require :plugins/vis-lspc))
 (set lspc.diagnostic_styles.error "underlined,fore:red")
 (set lspc.diagnostic_styles.warning "underlined,fore:yellow")
 (set lspc.highlight_diagnostics :range)
